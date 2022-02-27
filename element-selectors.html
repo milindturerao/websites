@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element selectors</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1::after {
+            content: " Milind ";
+            display: block;
+        }
+
+        div{
+            width: 400px;
+            height: 200px;
+        }
+        div p::first-letter{
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        div p::first-line{
+            font: 1.5em sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wel Come To My Web Site </h1>
+  <div class="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maiores ipsam maxime id, dolor ut fugiat vitae
+        perferendis, quam quod porro eaque. In corporis voluptate obcaecati commodi! Ab, dolores beatae?</p>
+  </div>
+    <p>Hi</p>
+</body>
+
+</html>

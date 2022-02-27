@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List And overflow And opacity And Float</title>
+</head>
+<style>
+    .box-2{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        overflow: hidden;
+    }
+
+    .box-3{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(245, 10, 49);
+        overflow: scroll;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        clear: both;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .img-2{
+        opacity: 0.3;
+    }
+
+    .box-4{background-color: blue;}
+    /* ol {
+        list-style: upper-roman;
+    }
+
+    ul {
+        list-style-image: url('data:image/png;base64,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');
+        list-style: circle;
+    } */
+</style>
+
+<body>
+
+    <!-- <div class="box-1">
+        <h1>ul list</h1>
+        <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+        </ul>
+        <h1>ol list</h1>
+        <ol>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+        </ol>
+    </div> -->
+
+    <div class="box-4">
+        <div class="img-1">
+            <img src="https://123goodmorningquotes.com/wp-content/uploads/2020/05/Spiritual-Good-Morning-Images.jpg" alt="">
+        </div>
+        <div class="img-2">
+            <img src="https://123goodmorningquotes.com/wp-content/uploads/2020/05/Spiritual-Good-Morning-Images.jpg" alt="">
+        </div>
+    </div>
+    <div class="box-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dignissimos veritatis aspernatur nostrum
+            temporibus natus quaerat commodi, quibusdam deserunt inventore sit dolorem aliquam fuga, consequatur veniam
+            fugiat eligendi accusantium magni hic a quis incidunt. Praesentium alias dolor quis sapiente, quidem
+            mollitia ratione sed laudantium autem, ipsum animi placeat aliquam odio ipsa deleniti saepe vel at quos
+            assumenda voluptas earum fuga voluptatem! Maxime atque voluptatum beatae, magni quibusdam rerum nobis fuga
+            inventore dolorum obcaecati doloremque saepe nulla iste sed qui est nemo perferendis illo vel laudantium!
+            Aspernatur magnam, odit quisquam dolor debitis itaque fuga deleniti asperiores, dignissimos molestias totam
+            delectus est!</p>
+    </div>
+    <div class="box-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dignissimos veritatis aspernatur nostrum
+            temporibus natus quaerat commodi, quibusdam deserunt inventore sit dolorem aliquam fuga, consequatur veniam
+            fugiat eligendi accusantium magni hic a quis incidunt. Praesentium alias dolor quis sapiente, quidem
+            mollitia ratione sed laudantium autem, ipsum animi placeat aliquam odio ipsa deleniti saepe vel at quos
+            assumenda voluptas earum fuga voluptatem! Maxime atque voluptatum beatae, magni quibusdam rerum nobis fuga
+            inventore dolorum obcaecati doloremque saepe nulla iste sed qui est nemo perferendis illo vel laudantium!
+            Aspernatur magnam, odit quisquam dolor debitis itaque fuga deleniti asperiores, dignissimos molestias totam
+            delectus est!</p>
+    </div>
+
+</body>
+
+</html>

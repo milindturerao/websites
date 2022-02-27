@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    .box {
+        width: 900px;
+        margin: auto;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+
+    .container {
+        width: 900px;
+        margin: auto;
+        background-color: pink;
+    }
+
+    .box-1 {
+        width: 47%;
+        border: 1px solid gray;
+        background-color: red;
+        margin: 10px;
+        float: left;
+    }
+
+    .box-2 {
+        width: 47%;
+        border: 1px solid gray;
+        background-color: green;
+        margin: 10px;
+        float: left;
+    }
+
+    .box-3 {
+        width: 100%;
+        border: 1px solid gray;
+        background-color: blue;
+        margin: 10px;
+        /* float: left; */
+        clear: left;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aliquam libero alias obcaecati nesciunt?
+            Enim esse quas voluptatem est molestiae, vel corporis quae culpa officia voluptate iure doloremque inventore
+            dolorem, magnam quam dicta quis, neque quisquam nulla
+            <img src="https://123goodmorningquotes.com/wp-content/uploads/2020/05/Spiritual-Good-Morning-Images.jpg"
+                alt="">
+            aperiam obcaecati quia dolore praesentium reiciendis.
+            Dignissimos minus accusamus repudiandae nostrum, magni hic. Explicabo quo delectus perspiciatis sapiente
+            dolor provident reprehenderit non, omnis neque dolorum corrupti, id doloremque porro praesentium atque optio
+            debitis corporis, dicta natus. Excepturi velit aliquam itaque nesciunt hic consequatur commodi at error
+            sapiente ut laudantium dolorum, iusto doloribus. Corrupti rerum eos iste cumque fugiat esse consectetur vel
+            quo. Voluptatibus?
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="box-1"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam error earum sapiente ea. Id, voluptatibus voluptas nulla deleniti similique quisquam aut, odit culpa esse quibusdam, fugit perspiciatis. Magni, nobis ducimus!</p></div>
+        <div class="box-2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam error earum sapiente ea. Id, voluptatibus voluptas nulla deleniti similique quisquam aut, odit culpa esse quibusdam, fugit perspiciatis. Magni, nobis ducimus!</p></div>
+        <div class="box-3"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam error earum sapiente ea. Id, voluptatibus voluptas nulla deleniti similique quisquam aut, odit culpa esse quibusdam, fugit perspiciatis. Magni, nobis ducimus!</p></div>
+    </div>
+</body>
+
+</html>

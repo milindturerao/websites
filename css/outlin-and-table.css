@@ -1,0 +1,15 @@
+p.solid{
+    outline-style: double;
+    outline-width:20px;
+    outline-color: pink;
+    border: 5px solid red;
+}
+
+table,th,td{
+    border: 20px solid blue;
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
